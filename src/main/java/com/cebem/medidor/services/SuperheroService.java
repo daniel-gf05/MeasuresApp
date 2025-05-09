@@ -20,7 +20,7 @@ public class SuperheroService {
     @Value("${superhero.api.base-url}")
     private String baseUrl;
 
-    private final RestTemplate restTemplate = new RestTemplate();
+    private final RestTemplate restTemplate;
 
     private final int MAX_HERO_ID = 731; // Según la documentación de la API
 
